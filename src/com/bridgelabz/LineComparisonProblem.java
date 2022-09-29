@@ -15,6 +15,17 @@ public class LineComparisonProblem {
             System.out.println("Both lines are not equal");
         }
     }
+    static void compareTo(int length1,int length2){
+        if(length1==length2){
+            System.out.println("Line1 is equal to Line2");
+        }
+        else if(length1>length2){
+            System.out.println("Line1 is greater then Line2");
+        }
+        else{
+            System.out.println("Line1 is less then Line2");
+        }
+    }
     public static void main(String[] args) {
         System.out.println("Welcome to line comparison computation program");
         Scanner sc = new Scanner(System.in);
@@ -37,5 +48,6 @@ public class LineComparisonProblem {
         System.out.println("Length of line1 is " + result1);
         System.out.println("Length of line2 is " + result2);
         equals(result1,result2);
+        compareTo(result1,result2);
     }
 }
